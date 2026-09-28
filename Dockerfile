@@ -50,6 +50,7 @@ ENV PATH="/app/.venv/bin:${PATH}" \
 RUN apk upgrade --no-cache \
         giflib \
         libblkid \
+        libexpat \
         libmount \
         libuuid \
         libcrypto3 \
