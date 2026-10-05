@@ -56,6 +56,8 @@ RUN apk upgrade --no-cache \
         libcrypto3 \
         libssl3 \
         sqlite-libs \
+    && apk add --no-cache --upgrade \
+        pcre2 \
     && apk add --no-cache \
         tesseract-ocr=5.5.1-r0 \
         tesseract-ocr-data-eng=5.5.1-r0 \
