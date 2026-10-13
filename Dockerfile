@@ -56,6 +56,7 @@ RUN apk upgrade --no-cache \
         libcrypto3 \
         libssl3 \
         sqlite-libs \
+        tiff \
     && apk add --no-cache --upgrade \
         pcre2 \
     && apk add --no-cache \
