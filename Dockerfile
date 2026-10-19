@@ -50,7 +50,6 @@ ENV PATH="/app/.venv/bin:${PATH}" \
 RUN apk upgrade --no-cache \
         giflib \
         libblkid \
-        libexpat \
         libmount \
         libuuid \
         libcrypto3 \
@@ -58,6 +57,7 @@ RUN apk upgrade --no-cache \
         sqlite-libs \
         tiff \
     && apk add --no-cache --upgrade \
+        'libexpat>=2.9.0-r0' \
         pcre2 \
     && apk add --no-cache \
         tesseract-ocr=5.5.1-r0 \
