@@ -57,6 +57,7 @@ RUN apk upgrade --no-cache \
         sqlite-libs \
         tiff \
     && apk add --no-cache --upgrade \
+        'brotli-libs>=1.2.1-r0' \
         'libexpat>=2.9.0-r0' \
         pcre2 \
     && apk add --no-cache \
