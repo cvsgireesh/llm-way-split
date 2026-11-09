@@ -58,8 +58,12 @@ RUN apk upgrade --no-cache \
         tiff \
     && apk add --no-cache --upgrade \
         'brotli-libs>=1.2.1-r0' \
-        'libexpat>=2.9.0-r0' \
+        'glib>=2.86.5-r0' \
+        'libexpat>=2.10.0-r0' \
+        'musl>=1.2.5-r24' \
+        'musl-utils>=1.2.5-r24' \
         pcre2 \
+        'zlib>=1.3.2-r1' \
     && apk add --no-cache \
         tesseract-ocr=5.5.1-r0 \
         tesseract-ocr-data-eng=5.5.1-r0 \
